@@ -5,8 +5,8 @@ const CTA: React.FC = () => {
   return (
     <section id="contact" className="py-24 bg-white relative overflow-hidden">
       {/* Decorative blobs */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-majorelle/5 rounded-full filter blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-majorelle/5 rounded-full filter blur-3xl translate-x-1/2 translate-y-1/2"></div>
+      <div className="absolute top-0 left-0 w-64 h-64 bg-brand/5 rounded-full filter blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand/5 rounded-full filter blur-3xl translate-x-1/2 translate-y-1/2"></div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <h2 className="text-4xl md:text-5xl font-bold text-dark mb-6 tracking-tight">
@@ -21,14 +21,14 @@ const CTA: React.FC = () => {
             href="https://calendly.com/qlamblot/15min" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-majorelle rounded-xl hover:bg-majorelleDark transition-all w-full sm:w-auto shadow-lg shadow-majorelle/30 hover:translate-y-[-2px]"
+            className="flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-brand rounded-xl hover:bg-brandDark transition-all w-full sm:w-auto shadow-lg shadow-brand/30 hover:translate-y-[-2px]"
           >
             <Calendar className="mr-2 h-5 w-5" />
             Réserver un appel découverte
           </a>
           <a 
             href="mailto:qlamblot@gmail.com"
-            className="flex items-center justify-center px-8 py-4 text-lg font-bold text-dark bg-white border-2 border-gray-200 rounded-xl hover:border-majorelle hover:text-majorelle transition-all w-full sm:w-auto hover:bg-gray-50"
+            className="flex items-center justify-center px-8 py-4 text-lg font-bold text-dark bg-white border-2 border-gray-200 rounded-xl hover:border-brand hover:text-brand transition-all w-full sm:w-auto hover:bg-gray-50"
           >
             <Mail className="mr-2 h-5 w-5" />
             Nous contacter par email

@@ -9,14 +9,14 @@ const Hero: React.FC = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl">
-          <div className="inline-flex items-center space-x-2 bg-majorelle/10 rounded-full px-4 py-1.5 mb-8">
-            <span className="flex h-2 w-2 rounded-full bg-majorelle"></span>
-            <span className="text-sm font-medium text-majorelle tracking-wide uppercase">Pour les SaaS B2B Mass Market</span>
+          <div className="inline-flex items-center space-x-2 bg-brand/10 rounded-full px-4 py-1.5 mb-8">
+            <span className="flex h-2 w-2 rounded-full bg-brand"></span>
+            <span className="text-sm font-medium text-brand tracking-wide uppercase">Pour les SaaS B2B Mass Market</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-extrabold text-dark tracking-tight leading-[1.1] mb-8">
             YouTube n'est pas du contenu. <br className="hidden lg:block"/>
-            C'est votre prochain <span className="text-majorelle">canal d'acquisition</span>.
+            C'est votre prochain <span className="text-brand">canal d'acquisition</span>.
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
@@ -27,14 +27,14 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a 
               href="#contact" 
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-majorelle rounded-lg hover:bg-majorelleDark transition-all shadow-lg shadow-majorelle/25 hover:translate-y-[-2px]"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand rounded-lg hover:bg-brandDark transition-all shadow-lg shadow-brand/25 hover:translate-y-[-2px]"
             >
               Parler à un expert
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>
             <a 
               href="#method" 
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-dark bg-white border-2 border-gray-100 rounded-lg hover:border-majorelle/30 hover:bg-gray-50 transition-all"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-dark bg-white border-2 border-gray-100 rounded-lg hover:border-brand/30 hover:bg-gray-50 transition-all"
             >
               <PlayCircle className="mr-2 h-5 w-5 text-gray-400" />
               Voir notre approche

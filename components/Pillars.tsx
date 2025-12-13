@@ -4,15 +4,15 @@ import { PillarProps } from '../types';
 
 const PillarCard: React.FC<PillarProps> = ({ icon: Icon, title, description, points }) => (
   <div className="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group">
-    <div className="h-14 w-14 rounded-xl bg-majorelle/10 flex items-center justify-center mb-6 group-hover:bg-majorelle transition-colors">
-      <Icon className="h-7 w-7 text-majorelle group-hover:text-white transition-colors" />
+    <div className="h-14 w-14 rounded-xl bg-brand/10 flex items-center justify-center mb-6 group-hover:bg-brand transition-colors">
+      <Icon className="h-7 w-7 text-brand group-hover:text-white transition-colors" />
     </div>
     <h3 className="text-xl font-bold text-dark mb-4">{title}</h3>
     <p className="text-gray-600 mb-6 min-h-[80px]">{description}</p>
     <ul className="space-y-3">
       {points.map((point, idx) => (
         <li key={idx} className="flex items-start text-sm text-gray-500">
-          <span className="mr-2 text-majorelle font-bold">•</span>
+          <span className="mr-2 text-brand font-bold">•</span>
           {point}
         </li>
       ))}

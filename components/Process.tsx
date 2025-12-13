@@ -33,7 +33,7 @@ const Process: React.FC = () => {
               Comment nous opérons votre canal
             </h2>
             <p className="text-gray-400 text-lg mb-8">
-              Diabolo fonctionne comme une extension de votre équipe Growth. Pas de micro-management, juste une roadmap claire et de l'exécution.
+              Videac fonctionne comme une extension de votre équipe Growth. Pas de micro-management, juste une roadmap claire et de l'exécution.
             </p>
             <a 
               href="#contact" 
@@ -45,8 +45,8 @@ const Process: React.FC = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {steps.map((step, idx) => (
-              <div key={idx} className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-majorelle/50 transition-colors">
-                <span className="text-5xl font-bold text-majorelle/20 mb-4 block">{step.num}</span>
+              <div key={idx} className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-brand/50 transition-colors">
+                <span className="text-5xl font-bold text-brand/20 mb-4 block">{step.num}</span>
                 <h3 className="text-xl font-bold mb-2">{step.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{step.desc}</p>
               </div>

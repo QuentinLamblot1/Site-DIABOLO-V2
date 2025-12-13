@@ -34,30 +34,30 @@ const Problem: React.FC = () => {
           </div>
 
           <div className="relative">
-            <div className="absolute inset-0 bg-majorelle/5 rounded-2xl transform rotate-3 scale-105 -z-10"></div>
+            <div className="absolute inset-0 bg-brand/5 rounded-2xl transform rotate-3 scale-105 -z-10"></div>
             <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
                <div className="flex items-start">
-                  <CheckCircle2 className="h-8 w-8 text-majorelle mt-1 flex-shrink-0" />
+                  <CheckCircle2 className="h-8 w-8 text-brand mt-1 flex-shrink-0" />
                   <div className="ml-4">
-                    <h3 className="text-2xl font-bold text-dark">L'approche Diabolo</h3>
+                    <h3 className="text-2xl font-bold text-dark">L'approche Videac</h3>
                     <p className="mt-2 text-gray-600">
                       Nous ne sommes pas une agence de création. Nous sommes votre <strong>opérateur de canal</strong>.
                     </p>
                     <div className="mt-6 space-y-4">
                         <div className="flex items-center space-x-3">
-                            <div className="h-2 w-2 rounded-full bg-majorelle"></div>
+                            <div className="h-2 w-2 rounded-full bg-brand"></div>
                             <span className="text-dark font-medium">YouTube traité comme le SEO ou le Paid</span>
                         </div>
                         <div className="flex items-center space-x-3">
-                            <div className="h-2 w-2 rounded-full bg-majorelle"></div>
+                            <div className="h-2 w-2 rounded-full bg-brand"></div>
                             <span className="text-dark font-medium">Contenu conçu pour convertir</span>
                         </div>
                         <div className="flex items-center space-x-3">
-                            <div className="h-2 w-2 rounded-full bg-majorelle"></div>
+                            <div className="h-2 w-2 rounded-full bg-brand"></div>
                             <span className="text-dark font-medium">Système de production industrialisé</span>
                         </div>
                         <div className="flex items-center space-x-3">
-                            <div className="h-2 w-2 rounded-full bg-majorelle"></div>
+                            <div className="h-2 w-2 rounded-full bg-brand"></div>
                             <span className="text-dark font-medium">Tracking précis des leads générés</span>
                         </div>
                     </div>
