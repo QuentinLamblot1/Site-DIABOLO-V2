@@ -26,7 +26,9 @@ const Hero: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
             <a 
-              href="#contact" 
+              href="https://calendly.com/qlamblot/15min"
+              target="_blank"
+              rel="noopener noreferrer" 
               className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand rounded-lg hover:bg-brandDark transition-all shadow-lg shadow-brand/25 hover:translate-y-[-2px]"
             >
               Parler à un expert
