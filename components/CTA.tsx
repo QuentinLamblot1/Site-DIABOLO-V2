@@ -17,14 +17,22 @@ const CTA: React.FC = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
-          <button className="flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-majorelle rounded-xl hover:bg-majorelleDark transition-all w-full sm:w-auto shadow-lg shadow-majorelle/30">
+          <a 
+            href="https://calendly.com/qlamblot/15min" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-majorelle rounded-xl hover:bg-majorelleDark transition-all w-full sm:w-auto shadow-lg shadow-majorelle/30 hover:translate-y-[-2px]"
+          >
             <Calendar className="mr-2 h-5 w-5" />
             Réserver un appel découverte
-          </button>
-          <button className="flex items-center justify-center px-8 py-4 text-lg font-bold text-dark bg-white border-2 border-gray-200 rounded-xl hover:border-majorelle hover:text-majorelle transition-all w-full sm:w-auto">
+          </a>
+          <a 
+            href="mailto:qlamblot@gmail.com"
+            className="flex items-center justify-center px-8 py-4 text-lg font-bold text-dark bg-white border-2 border-gray-200 rounded-xl hover:border-majorelle hover:text-majorelle transition-all w-full sm:w-auto hover:bg-gray-50"
+          >
             <Mail className="mr-2 h-5 w-5" />
             Nous contacter par email
-          </button>
+          </a>
         </div>
 
         <p className="mt-8 text-sm text-gray-400">
