@@ -1,5 +1,5 @@
 import React from 'react';
-import { XCircle, Trash2, TrendingDown, Ban } from 'lucide-react';
+import { XCircle, Trash2, TrendingDown, Ban, ArrowRight } from 'lucide-react';
 
 const Problem: React.FC = () => {
   return (
@@ -28,7 +28,7 @@ const Problem: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           
           {/* Card 1: Warehouse */}
           <div className="group bg-slate-800/40 backdrop-blur-sm rounded-2xl p-8 border border-red-900/30 hover:border-red-500/50 transition-all duration-300 hover:bg-slate-800/60">
@@ -73,11 +73,26 @@ const Problem: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-20 text-center">
-          <h3 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+        <div className="text-center">
+          <h3 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-10">
             Le problème n’est pas YouTube. <br />
             <span className="text-gray-500 mt-2 block">C’est l’absence de système.</span>
           </h3>
+          
+          <div className="flex flex-col items-center">
+            <a 
+              href="https://calendly.com/qlamblot/15min" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand rounded-lg hover:bg-brandDark transition-all shadow-lg shadow-red-900/20 hover:translate-y-[-2px]"
+            >
+              Réserver un Audit Gratuit
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+            <p className="mt-4 text-sm font-medium text-gray-500">
+              Objectif : Voir si YouTube peut devenir un canal d’acquisition pour vous
+            </p>
+          </div>
         </div>
       </div>
     </section>

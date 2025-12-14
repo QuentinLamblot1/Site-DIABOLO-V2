@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Video, BarChart3 } from 'lucide-react';
+import { Target, Video, BarChart3, ArrowRight } from 'lucide-react';
 import { PillarProps } from '../types';
 
 const PillarCard: React.FC<PillarProps & { image: string, index: number }> = ({ icon: Icon, title, description, points, image, index }) => (
@@ -90,6 +90,21 @@ const Pillars: React.FC = () => {
             <PillarCard key={index} {...pillar} index={index} />
           ))}
         </div>
+
+        <div className="mt-16 flex flex-col items-center">
+            <a 
+              href="https://calendly.com/qlamblot/15min" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand rounded-lg hover:bg-brandDark transition-all shadow-lg hover:translate-y-[-2px]"
+            >
+              Echanger avec un expert
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+            <p className="mt-4 text-sm font-medium text-gray-500">
+              Objectif : Voir si YouTube peut devenir un canal d’acquisition pour vous
+            </p>
+          </div>
       </div>
     </section>
   );

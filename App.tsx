@@ -3,8 +3,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Problem from './components/Problem';
 import Ecosystem from './components/Ecosystem';
-import Pillars from './components/Pillars';
 import Process from './components/Process';
+import WhyUs from './components/WhyUs';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 
@@ -16,8 +16,8 @@ const App: React.FC = () => {
         <Hero />
         <Problem />
         <Ecosystem />
-        <Pillars />
         <Process />
+        <WhyUs />
         <CTA />
       </main>
       <Footer />

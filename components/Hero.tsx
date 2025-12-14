@@ -23,23 +23,28 @@ const Hero: React.FC = () => {
             Nous transformons YouTube en une machine à générer des leads qualifiés et récurrents. Stratégie, production, data : nous opérons YouTube comme un vrai canal d’acquisition.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <a 
-              href="https://calendly.com/qlamblot/15min"
-              target="_blank"
-              rel="noopener noreferrer" 
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand rounded-lg hover:bg-brandDark transition-all shadow-lg shadow-brand/25 hover:translate-y-[-2px]"
-            >
-              Parler à un expert
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
-            <a 
-              href="#method" 
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-dark bg-white border-2 border-gray-100 rounded-lg hover:border-brand/30 hover:bg-gray-50 transition-all"
-            >
-              <PlayCircle className="mr-2 h-5 w-5 text-gray-400" />
-              Voir notre approche
-            </a>
+          <div className="flex flex-col space-y-4">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+              <a 
+                href="https://calendly.com/qlamblot/15min"
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand rounded-lg hover:bg-brandDark transition-all shadow-lg shadow-brand/25 hover:translate-y-[-2px]"
+              >
+                Echanger avec un expert
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
+              <a 
+                href="#method" 
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-dark bg-white border-2 border-gray-100 rounded-lg hover:border-brand/30 hover:bg-gray-50 transition-all"
+              >
+                <PlayCircle className="mr-2 h-5 w-5 text-gray-400" />
+                Voir notre approche
+              </a>
+            </div>
+            <p className="text-sm font-medium text-gray-500 pl-1">
+              Objectif de l'échange : Voir si YouTube peut devenir un canal d’acquisition pour vous
+            </p>
           </div>
           
           <div className="mt-16 flex items-center space-x-8 text-sm text-gray-400 font-medium">

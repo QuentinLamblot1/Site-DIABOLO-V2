@@ -3,7 +3,7 @@ import { ArrowDown, FileText, CheckCircle2, Play, Users, Lightbulb, Target, Arro
 
 const Ecosystem: React.FC = () => {
   return (
-    <section className="py-24 bg-white border-b border-gray-100">
+    <section id="method" className="py-24 bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
@@ -19,7 +19,7 @@ const Ecosystem: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           
           {/* Left Column: Funnel Cards */}
           <div className="space-y-6">
@@ -201,6 +201,21 @@ const Ecosystem: React.FC = () => {
           </div>
 
         </div>
+
+        <div className="flex flex-col items-center">
+            <a 
+              href="https://calendly.com/qlamblot/15min" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-brand rounded-lg hover:bg-brandDark transition-all shadow-lg hover:translate-y-[-2px]"
+            >
+              Réserver un Audit Gratuit
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
+            <p className="mt-4 text-sm font-medium text-gray-500">
+              Objectif : Voir si YouTube peut devenir un canal d’acquisition pour vous
+            </p>
+          </div>
       </div>
     </section>
   );
