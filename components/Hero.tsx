@@ -20,8 +20,7 @@ const Hero: React.FC = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
-            Nous transformons YouTube en une machine à leads qualifiés et récurrents. 
-            De la stratégie à l'analyse de la data, nous opérons le canal pour vous.
+            Nous transformons YouTube en une machine à générer des leads qualifiés et récurrents. Stratégie, production, data : nous opérons YouTube comme un vrai canal d’acquisition.
           </p>
           
           <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">

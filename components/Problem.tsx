@@ -1,104 +1,83 @@
 import React from 'react';
-import { X, Check } from 'lucide-react';
+import { XCircle, Trash2, TrendingDown, Ban } from 'lucide-react';
 
 const Problem: React.FC = () => {
   return (
     <section id="problem" className="py-24 bg-dark relative overflow-hidden">
-      {/* Background noise/grain could be added here */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-brand/5 blur-3xl rounded-full transform translate-x-1/2"></div>
+      {/* Background Ambience - Red Tint for Urgency */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand/5 via-transparent to-transparent opacity-40"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Pourquoi vos vidéos <br/> <span className="text-brand">ne convertissent pas</span> ?
+        {/* Container widened to max-w-5xl to prevent unwanted wrapping on large screens */}
+        <div className="max-w-5xl mx-auto text-center mb-16">
+          <div className="inline-flex items-center space-x-2 bg-red-500/10 border border-red-500/20 rounded-full px-4 py-1.5 mb-8">
+            <span className="flex h-2 w-2 rounded-full bg-red-500 animate-pulse"></span>
+            <span className="text-sm font-bold text-red-400 tracking-wide uppercase">Le constat est brutal</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+            Arrêtez de traiter YouTube comme <br/>
+            <span className="text-red-500">un placard à balais.</span>
           </h2>
-          <p className="text-lg text-gray-400">
-            YouTube est le deuxième moteur de recherche au monde. Pourtant, la plupart des SaaS l'utilisent comme une simple vitrine d'archivage.
-          </p>
+          
+          <div className="space-y-4">
+            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto font-medium">
+              La majorité des SaaS B2B n’investissent pas dans YouTube.<br className="hidden md:block" />
+              Ils investissent dans de la vidéo… qu’ils uploadent sur YouTube.
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* The Old Way */}
-          <div className="group relative rounded-2xl overflow-hidden bg-gray-900 border border-gray-800 hover:border-red-900/50 transition-all duration-300">
-             <div className="absolute inset-0 bg-gradient-to-br from-red-900/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-             <div className="p-8">
-               <div className="flex items-center justify-between mb-8">
-                 <h3 className="text-2xl font-bold text-gray-200">L'approche Classique</h3>
-                 <div className="h-10 w-10 rounded-full bg-red-500/10 flex items-center justify-center">
-                    <X className="h-6 w-6 text-red-500" />
-                 </div>
-               </div>
-               
-               <div className="space-y-4 mb-8">
-                 <div className="flex items-start text-gray-400">
-                   <div className="mr-3 mt-1.5 h-1.5 w-1.5 rounded-full bg-red-500/50 flex-shrink-0"></div>
-                   <p>Contenu "Corporate" ennuyeux que personne ne cherche.</p>
-                 </div>
-                 <div className="flex items-start text-gray-400">
-                    <div className="mr-3 mt-1.5 h-1.5 w-1.5 rounded-full bg-red-500/50 flex-shrink-0"></div>
-                   <p>Métriques de vanité (Vues, Likes) sans impact revenu.</p>
-                 </div>
-                 <div className="flex items-start text-gray-400">
-                    <div className="mr-3 mt-1.5 h-1.5 w-1.5 rounded-full bg-red-500/50 flex-shrink-0"></div>
-                   <p>Production sporadique et coûteuse en interne.</p>
-                 </div>
-               </div>
-
-               <div className="h-48 w-full rounded-xl overflow-hidden relative opacity-50 grayscale group-hover:grayscale-0 transition-all duration-500">
-                  <img 
-                    src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&q=80&w=1000" 
-                    alt="Graphique en baisse" 
-                    className="object-cover w-full h-full"
-                  />
-                  <div className="absolute inset-0 bg-gray-900/60 flex items-center justify-center">
-                    <span className="px-4 py-2 bg-red-500/20 text-red-400 border border-red-500/30 rounded-lg text-sm font-bold uppercase tracking-wider">
-                      Pas de ROI
-                    </span>
-                  </div>
-               </div>
-             </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          {/* Card 1: Warehouse */}
+          <div className="group bg-slate-800/40 backdrop-blur-sm rounded-2xl p-8 border border-red-900/30 hover:border-red-500/50 transition-all duration-300 hover:bg-slate-800/60">
+            <div className="flex justify-between items-start mb-6">
+              <div className="h-12 w-12 bg-red-500/10 rounded-lg flex items-center justify-center border border-red-500/20 group-hover:bg-red-500/20 transition-colors">
+                <Trash2 className="h-6 w-6 text-red-500" />
+              </div>
+              <XCircle className="h-6 w-6 text-red-600 opacity-50 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-4">Le "Vide-Grenier" à Webinars</h3>
+            <p className="text-gray-400 leading-relaxed text-sm">
+              Vous confondez YouTube et Google Drive. Uploader des replays Zoom de 60min sans montage tue votre rétention. <strong className="text-red-400">L'algo vous déteste, vos prospects vous ignorent.</strong>
+            </p>
           </div>
 
-          {/* The Videac Way */}
-          <div className="group relative rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-2xl transform md:-translate-y-4">
-             <div className="p-8">
-               <div className="flex items-center justify-between mb-8">
-                 <h3 className="text-2xl font-bold text-dark">L'approche Videac</h3>
-                 <div className="h-10 w-10 rounded-full bg-brand/10 flex items-center justify-center">
-                    <Check className="h-6 w-6 text-brand" />
-                 </div>
-               </div>
-               
-               <div className="space-y-4 mb-8">
-                 <div className="flex items-start text-gray-600">
-                   <div className="mr-3 mt-1.5 h-1.5 w-1.5 rounded-full bg-brand flex-shrink-0"></div>
-                   <p className="font-medium">Sujets basés sur l'intention d'achat (SEO).</p>
-                 </div>
-                 <div className="flex items-start text-gray-600">
-                    <div className="mr-3 mt-1.5 h-1.5 w-1.5 rounded-full bg-brand flex-shrink-0"></div>
-                   <p className="font-medium">Tracking précis des MQLs & SQLs.</p>
-                 </div>
-                 <div className="flex items-start text-gray-600">
-                    <div className="mr-3 mt-1.5 h-1.5 w-1.5 rounded-full bg-brand flex-shrink-0"></div>
-                   <p className="font-medium">Machine de production industrielle.</p>
-                 </div>
-               </div>
-
-               <div className="h-48 w-full rounded-xl overflow-hidden relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" 
-                    alt="Graphique en hausse" 
-                    className="object-cover w-full h-full"
-                  />
-                  <div className="absolute inset-0 bg-brand/10 group-hover:bg-transparent transition-colors duration-300"></div>
-                  <div className="absolute bottom-4 right-4">
-                     <span className="px-4 py-2 bg-white text-brand border border-gray-100 rounded-lg text-sm font-bold shadow-lg">
-                      + Leads Qualifiés
-                    </span>
-                  </div>
-               </div>
-             </div>
+          {/* Card 2: Free Content Trap */}
+          <div className="group bg-slate-800/40 backdrop-blur-sm rounded-2xl p-8 border border-red-900/30 hover:border-red-500/50 transition-all duration-300 hover:bg-slate-800/60">
+             <div className="flex justify-between items-start mb-6">
+              <div className="h-12 w-12 bg-red-500/10 rounded-lg flex items-center justify-center border border-red-500/20 group-hover:bg-red-500/20 transition-colors">
+                <Ban className="h-6 w-6 text-red-500" />
+              </div>
+              <XCircle className="h-6 w-6 text-red-600 opacity-50 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-4">Du Bénévolat, pas du Business</h3>
+            <p className="text-gray-400 leading-relaxed text-sm">
+              Vous éduquez le marché gratuitement. Le prospect consomme, apprend, et va acheter chez le concurrent qui a un vrai funnel. <strong className="text-red-400">Vous chauffez les leads pour les autres.</strong>
+            </p>
           </div>
+
+          {/* Card 3: Blind Pilot */}
+          <div className="group bg-slate-800/40 backdrop-blur-sm rounded-2xl p-8 border border-red-900/30 hover:border-red-500/50 transition-all duration-300 hover:bg-slate-800/60">
+             <div className="flex justify-between items-start mb-6">
+              <div className="h-12 w-12 bg-red-500/10 rounded-lg flex items-center justify-center border border-red-500/20 group-hover:bg-red-500/20 transition-colors">
+                <TrendingDown className="h-6 w-6 text-red-500" />
+              </div>
+              <XCircle className="h-6 w-6 text-red-600 opacity-50 group-hover:opacity-100 transition-opacity" />
+            </div>
+            <h3 className="text-2xl font-bold text-white mb-4">Le Pilotage à l'Aveugle</h3>
+            <p className="text-gray-400 leading-relaxed text-sm">
+              Sans tracking précis (Click-to-Lead), impossible de prouver votre ROI. Vous ne savez pas quelle vidéo convertit. <strong className="text-red-400">Sans data, impossible d'itérer et de scaler votre acquisition.</strong>
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-20 text-center">
+          <h3 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+            Le problème n’est pas YouTube. <br />
+            <span className="text-gray-500 mt-2 block">C’est l’absence de système.</span>
+          </h3>
         </div>
       </div>
     </section>

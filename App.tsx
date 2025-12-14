@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Problem from './components/Problem';
+import Ecosystem from './components/Ecosystem';
 import Pillars from './components/Pillars';
 import Process from './components/Process';
 import CTA from './components/CTA';
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <main>
         <Hero />
         <Problem />
+        <Ecosystem />
         <Pillars />
         <Process />
         <CTA />
